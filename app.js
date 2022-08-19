@@ -23,12 +23,13 @@ firstDomDiv.appendChild(p2);
 
 document.querySelector('.content').appendChild(firstDomDiv);
 
-// method 2
+function alertFunction() {
+    alert('YAY! YOU DID IT!');
+}
 const btn = document.querySelector('#btn');
-btn.onclick = () => {alert('Hello World!')};
-
-// method 3
 const btn2 = document.querySelector('#btn2');
-btn2.addEventListener('click', () => {
-    alert('Hello !');
-})
+btn.onclick = alertFunction;
+btn2.addEventListener('click', alertFunction);
+
+
+
