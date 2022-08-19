@@ -22,3 +22,13 @@ firstDomDiv.appendChild(h1);
 firstDomDiv.appendChild(p2);
 
 document.querySelector('.content').appendChild(firstDomDiv);
+
+// method 2
+const btn = document.querySelector('#btn');
+btn.onclick = () => {alert('Hello World!')};
+
+// method 3
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', () => {
+    alert('Hello !');
+})
